@@ -1,0 +1,57 @@
+	@import 'vars';
+	
+	.ProductDetail {
+		width: 360px;
+		box-sizing: border-box;
+		position: fixed;
+		right: 0;
+		background-color: white;
+		top: 60px;
+		bottom: 0;
+		border-radius: 6px;
+		border: 1px solid $--very-light-pink;
+		height: 100%;
+		overflow: auto;
+	}
+	.ProductDetail-close {
+		background: $--white;
+		width: 38px;
+		height: 38px;
+		position: absolute;
+		top: 24px;
+		left: 24px;
+		z-index: 2;
+		padding: 12px;
+		border-radius: 50%;
+	}
+	.ProductDetail-close:hover {
+		cursor: pointer;
+	}
+	.ProductDetail > img:nth-child(2) {
+		width: 100%;
+		height: 314px;
+		object-fit: cover;
+		border-radius: 0 0 20px 20px;
+	}
+	.primary-button {
+		background-color: $--hospital-green;
+		border-radius: 8px;
+		border: none;
+		color: $--white;
+		width: 100%;
+		cursor: pointer;
+		font-size: $--md;
+		font-weight: bold;
+		height: 50px;
+	  }
+	  .add-to-cart-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	  }
+
+	@media (max-width: 640px) {
+		.ProductDetail {
+			width: 100%;
+		}
+	}
